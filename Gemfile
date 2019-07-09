@@ -17,6 +17,9 @@ gem 'jquery-rails'
 gem 'toastr-rails'
 gem 'omniauth', '~> 1.6'
 gem 'omniauth-twitter'
+gem 'carrierwave'
+gem 'cloudinary'
+gem 'figaro'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes

@@ -6,5 +6,9 @@ Rails.application.routes.draw do
     controllers: {omniauth_callbacks: 'omniauth_callbacks', registrations: 'registrations' }
 
   resources :users, only: [:show]
+
+  resources :posts, only: [:index, :show, :create] do 
+  	resources :photos, only: [:create]
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
